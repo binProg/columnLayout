@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Three Column Layout</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            
+            .container{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .left{
+                width: 200px;
+                height: 100%;
+                background-color:cadetblue;
+            }
+
+            .right{
+                flex: 1;
+                height: 100%;
+                background-color: aqua;
+            }
+
+            .middle{
+                width: 200px;
+                background-color:bisque;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">LEFT</div>
+            <div class="middle">MIDDLE</div>
+            <div class="right">RIGHT</div>
+        </div>
+    </body>
+</html>

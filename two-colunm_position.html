@@ -1,0 +1,37 @@
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>A two-column layout</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .left{
+                background-color: bisque;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 30%;
+                height: 100%;
+            }
+
+            .right{
+                background-color:blueviolet;
+                position: absolute;
+                top: 0;
+                left: 30%;
+                right: 0;
+                bottom: 0;
+                width: 70%;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="left">LEFT</div>
+        <div class="right">RIGHT</div>
+    </body>
+</html>
