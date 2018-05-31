@@ -1,0 +1,119 @@
+body{
+    width:100%
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: dimgray;
+    display: flex;
+}
+.header::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.fixed_region{
+    width:960px;
+    height:50px;
+    margin: auto;
+}
+.logo{
+    color:white;            
+    float:left;
+    font-size:24px;               
+}
+.link{         
+    float:right;
+}
+
+a:link{color:white;text-decoration: underline;}
+a:visited{color:white;text-decoration: underline;}
+a:hover{color:red;text-decoration: underline;}
+
+.banner{
+    width:100%;
+    height:200px;
+    background-color: green;
+}
+.btn{
+    float:right;
+    position:relative;
+    top:80%;
+    right:15%;
+    display:flex;
+    align-items: flex-end;
+}
+.one, .two,.three,.four{
+    margin:3px;
+    height:24px;
+    background-color: darkseagreen;
+}
+.second{
+    height:32px;
+    background-color:white;
+}
+
+.nav{
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid grey;
+    display:flex;
+}
+.fixed_nav{
+    width:960px;
+    height:50px;
+    margin:auto;
+    word-spacing:-5px;      
+}
+h5{
+    display:inline-block;
+    padding:8px 16px 8px 16px;
+    background-color: rgb(233, 229, 229);
+    position:relative;
+    bottom:6px;
+    border:1px solid grey;
+    border-top-left-radius: 16px;/*实现弧形边框*/
+    border-top-right-radius: 16px;
+}
+h5:nth-child(1){
+    background-color: white;
+    border-bottom: none;
+}
+
+.main{
+    width:100%;
+    display:flex;
+}
+.fixed_main{
+    width:960px;
+    margin:auto;
+    display:flex;
+    flex-flow: row wrap;
+}
+.content{
+    padding:80px;
+    margin:2px;
+    font-size: 14px;
+    text-align: center;
+  
+    flex:1 70px;
+    align-items: center;
+    justify-content: space-around;
+   
+   border:1px solid grey;
+}
+.content:nth-of-type(1){
+    flex:2 70px;
+}
+
+
+.footer{
+    width:100%;
+    height:100px;
+    background-color: darkgrey;
+}
+.com{
+     text-align:center;
+     color:white;
+}
